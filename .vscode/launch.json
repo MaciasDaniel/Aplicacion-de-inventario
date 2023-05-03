@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SistemainventarioApplication<sistemainventario>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.sistema.inventario.sistemainventario.SistemainventarioApplication",
+            "projectName": "sistemainventario",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
