@@ -30,7 +30,7 @@
         </div>
         <form th:action="@{/usuarios/guardar}" th:object="${usuario}" method="post"
             style="max-width:600px;margin:0 auto;">
-            <input type="hidden" th:field="*{id}" value="${usuario.id}"/>
+            <input type="hidden" th:field="*{id}" th:value="${usuario.id}"/>
             <div class="m-3">
                 <div class="form-group row">
                     <label class="col-form-label col-sm-4">Email : </label>
@@ -49,7 +49,7 @@
                     <div class="col-sm-8 text-left">
                         <th:block th:each="rol : ${listaRoles}">
                             <div>
-                                <input type="checkbox" th:field="*{roles}" th:text="${rol.nombre}" th:Value="${rol.id}" class="m-2">
+                                <input type="checkbox" th:field="*{roles}" th:text="${rol.nombre}" th:value="${rol.id}" class="m-2">
                             </div>
                         </th:block>
                     </div>
